@@ -1,0 +1,512 @@
+
+
+<!-- applicant details and feedback view Modal start -->
+<div class="modal fade" id="applicantDetailsModal" tabindex="-1"
+	aria-labelledby="applicantDetailsModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-xl">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h1 class="modal-title fs-5" id="courseDetailsModalLabel">Applicant
+					Details</h1> &nbsp;&nbsp;<div id="isRecommendedId"></div> 
+				<button type="button" class="btn-close" data-bs-dismiss="modal"
+					aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+			
+			<div id="modalBodyContentDivId">
+			<input type="text" id="modalCourseUniqueIdId" style="display: none;">
+				<div class="row">
+					<div class="col-md-4 mb-3">
+						<label for="validationCustom01"><h6 class="mb-0">Application
+								ID</h6></label> <input type="text" class="form-control"
+							id="modalApplicationId" name="modalApplicationId"
+							disabled="disabled">
+					</div>
+					<div class="col-md-4 mb-3">
+						<label for="validationCustom01"><h6 class="mb-0">Student
+								ID</h6></label> <input type="text" class="form-control" id="modalStudentId"
+							name="modalStudentId" disabled="disabled">
+					</div>
+					<div class="col-md-4 mb-3">
+						<label for="validationCustom01"><h6 class="mb-0">Qualification</h6></label>
+						<input type="text" class="form-control" id="modalQualificationId"
+							name="modalQualificationId" disabled="disabled">
+					</div>
+				</div>
+
+				<hr />
+
+				<h1 class="modal-title fs-5">Course Details</h1>
+				<br />
+				<div class="row">
+					<div class="col-md-4 mb-3">
+						<label for="validationCustom01"><h6 class="mb-0">Course
+								ID</h6></label> <input type="text" class="form-control" id="modalCourseId"
+							name="modalCourseId" disabled="disabled">
+					</div>
+					<div class="col-md-4 mb-3">
+						<label for="validationCustom01"><h6 class="mb-0">Application
+								Status</h6></label> <input type="text" class="form-control"
+							id="modalApplicationStatusId" name="modalApplicationStatusId"
+							disabled="disabled">
+					</div>
+					<div class="col-md-4 mb-3">
+						<label for="validationCustom01"><h6 class="mb-0">Offer
+								Status</h6></label> <input type="text" class="form-control"
+							id="modalofferStatusId" name="modalofferStatusId"
+							disabled="disabled">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4 mb-3">
+						<label for="validationCustom01"><h6 class="mb-0">Course
+								Approved On</h6></label> <input type="text" class="form-control"
+							id="modalCourseApprovedOnId" name="modalCourseApprovedOnId"
+							disabled="disabled">
+					</div>
+					<div class="col-md-4 mb-3">
+						<label for="validationCustom01"><h6 class="mb-0">Offer
+								Accepted On</h6></label> <input type="text" class="form-control"
+							id="modalOfferAcceptedOnId" name="modalOfferAcceptedOnId"
+							disabled="disabled">
+					</div>
+					<div class="col-md-4 mb-3">
+						<label for="validationCustom01"><h6 class="mb-0">Course
+								Started On</h6></label> <input type="text" class="form-control"
+							id="modalCourseStartedOnId" name="modalCourseStartedOnId"
+							disabled="disabled">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4 mb-3">
+						<label for="validationCustom01"><h6 class="mb-0">Course
+								Rejected On</h6></label> <input type="text" class="form-control"
+							id="modalCourseRejectedOnId" name="modalCourseRejectedOnId"
+							disabled="disabled">
+					</div>
+					<div class="col-md-4 mb-3">
+						<label for="validationCustom01"><h6 class="mb-0">Offer
+								Rejected On</h6></label> <input type="text" class="form-control"
+							id="modalOfferRejectedOnId" name="modalOfferRejectedOnId"
+							disabled="disabled">
+					</div>
+					<div class="col-md-4 mb-3">
+						<label for="validationCustom01"><h6 class="mb-0">Course
+								Ended On</h6></label> <input type="text" class="form-control"
+							id="modalCourseEndedOnId" name="modalCourseEndedOnId"
+							disabled="disabled">
+					</div>
+				</div>
+
+				<hr />
+				<h1 class="modal-title fs-5">Professor Details</h1>
+				<br />
+				<div class="row">
+					<div class="col-md-4 mb-3">
+						<label for="validationCustom01"><h6 class="mb-0">Email
+								Address</h6></label> <input type="text" class="form-control"
+							id="modalProfessorEmailId" name="modalProfessorEmailId"
+							disabled="disabled">
+					</div>
+					<div class="col-md-4 mb-3">
+						<label for="validationCustom01"><h6 class="mb-0">Contact
+								No.</h6></label> <input type="text" class="form-control"
+							id="modalProfessorContactNoId" name="modalProfessorContactNoId"
+							disabled="disabled">
+					</div>
+				</div>
+
+				<hr />
+				<h1 class="modal-title fs-5">Instructor Details</h1>
+				<br />
+				<div class="row">
+					<div class="col-md-4 mb-3">
+						<label for="validationCustom01"><h6 class="mb-0">Email
+								Address</h6></label> <input type="text" class="form-control"
+							id="modalInstructorEmailId" name="modalInstructorEmailId"
+							disabled="disabled">
+					</div>
+					<div class="col-md-4 mb-3">
+						<label for="validationCustom01"><h6 class="mb-0">Contact
+								No.</h6></label> <input type="text" class="form-control"
+							id="modalInstructorContactNoId" name="modalInstructorContactNoId"
+							disabled="disabled">
+					</div>
+				</div>
+
+				<hr />
+				<h1 class="modal-title fs-5">Previous Course Details</h1>
+				<br />
+				
+				<b id="noDataPrevCourseTableDivId">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- No data provided</b>
+				<div class="row" id="prevCourseTableDivId">
+					<table class="table table-bordered table-hover" border="1px"
+						style="overflow-x: scroll; overflow-y: scroll;" id="prevCourseMainTableId">
+						<thead>
+							<tr>
+								<th scope="col">S.No.</th>
+								<th scope="col">Course Name</th>
+								<th scope="col">From Date</th>
+								<th scope="col">To Date</th>
+							</tr>
+						</thead>
+						<tbody id="prevCourseTableId">
+						</tbody>
+					</table>
+				</div>
+
+				<hr />
+				<h1 class="modal-title fs-5">Performance Details</h1>
+				<br />
+				<div class="row">
+					<div class="col-md-4 mb-3">
+						<label for="validationCustom01"><h6 class="mb-0">Rating</h6></label>
+						<input type="text" class="form-control" id="modalRatingId"
+							name="modalRatingId" disabled="disabled">
+					</div>
+					<div class="col-md-4 mb-3">
+						<label for="validationCustom01"><h6 class="mb-0">Feedback
+								Given On</h6></label> <input type="text" class="form-control"
+							id="modalFeedbackGivenOnId" name="modalFeedbackGivenOnId"
+							disabled="disabled">
+					</div>
+					<div class="col-md-9 mb-3">
+						<label for="validationCustom01"><h6 class="mb-0">Feedback</h6></label>
+						<textarea id="modalFeedbackId" name="modalFeedbackId"
+							class="form-control" id="exampleFormControlTextarea1" rows="3"
+							disabled="disabled"></textarea>
+					</div>
+				</div>
+</div>
+			</div>
+			<div class="modal-footer">
+
+				<button type="button" class="btn btn-primary btn-sm" id="apprvBtnId"
+					onclick="apprvOrRejectApplications('APPROVED')">Approve</button>&nbsp;
+					
+				<button type="button" class="btn btn-danger btn-sm" id="rejBtnId"
+					onclick="apprvOrRejectApplications('REJECTED')">Reject</button>
+
+				<button type="button" class="btn btn-primary btn-sm"
+					id="recommendBtnId" onclick="recommendOrNotifyApplication('RECOMMEND')">Recommend</button>
+				&nbsp;
+				<button type="button" class="btn btn-primary btn-sm"
+					id="notifyBtnId" onclick="recommendOrNotifyApplication('NOTIFIED')">Notify</button>
+					
+				&nbsp;
+				<button type="button" class="btn btn-secondary btn-sm"
+					data-bs-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- applicant details and feedback view Modal end -->
+
+<script type="text/javascript">
+	function loadApplicantCourseDetails(courseId,courseUniqueId,applicationStatus,userId) {
+
+		$.ajax({
+			type : "get",
+			url : "getApplicantDtlsByCourseId",
+			data : {
+				status : applicationStatus,
+				userId : userId,
+				courseId : courseId,
+				courseUniqueId : courseUniqueId
+			},
+			success : function(responseData, textStatus, jqXHR) {
+				//alert(responseData)
+				$("#modalApplicationId").val("");
+				$("#modalStudentId").val("");
+				$("#modalQualificationId").val("");
+				$("#modalCourseId").val("");
+				$("#modalApplicationStatusId").val("");
+				$("#modalofferStatusId").val("");
+				$("#modalCourseApprovedOnId").val("");
+				$("#modalOfferAcceptedOnId").val("");
+				$("#modalCourseStartedOnId").val("");
+				$("#modalCourseRejectedOnId").val("");
+				$("#modalOfferRejectedOnId").val("");
+				$("#modalCourseEndedOnId").val("");
+				$("#modalInstructorEmailId").val("");
+				$("#modalInstructorContactNoId").val("");
+				$("#modalRatingId").val("");
+				$("#modalFeedbackId").val("");
+				$("#modalFeedbackGivenOnId").val("");
+				$("#modalCourseUniqueIdId").val("");
+				
+
+				//alert("============"+responseData)
+				if (responseData.split("@@SEPARATOR@@")[0] == "SUCCESS") {
+
+					var applicantCourseDtls = responseData
+							.split("@@SEPARATOR@@")[1];
+					//alert(applicantCourseDtls)
+					if (applicantCourseDtls != null
+							&& applicantCourseDtls.trim() != "") {
+						$("#modalBodyContentDivId").show();
+						setApplicantCourseDtls(applicantCourseDtls,courseUniqueId);
+					} else {
+						$("#recommendBtnId").hide();
+						$("#notifyBtnId").hide();
+						$("#apprvBtnId").hide();
+						$("#rejBtnId").hide();
+						$("#modalBodyContentDivId").hide();
+					}
+
+				} else {
+
+					$("#statusMessage").text(
+							"Something went wrong.please try again later!");
+					$("#statusMessage").focus();
+				}
+
+			},
+			error : function(jqXHR, textStatus, errorThrown) {
+				console.log(errorThrown);
+			}
+		});
+	}
+
+	function setApplicantCourseDtls(applicantCourseDtls,courseUniqueId) {
+
+		var json = JSON.parse(applicantCourseDtls);
+		var userType = $("#userType").val();
+		//
+		$("#modalCourseUniqueIdId").val(courseUniqueId);
+		//
+		if(userType=="TA Committee"){
+			$("#recommendBtnId").hide();
+			$("#notifyBtnId").hide();
+		}else if(userType=="TA Admin"){
+			$("#recommendBtnId").show();
+			$("#notifyBtnId").show();
+		}
+		
+		if(userType == "TA Admin"){
+			if($("#status").val()=="PENDING"){
+				$("#recommendBtnId").show();
+				
+			}else{
+				$("#recommendBtnId").hide();
+			}
+			
+			if($("#status").val()=="PENDING" || $("#status").val()=="APPROVED" || $("#status").val()=="REJECTED"){
+				$("#notifyBtnId").show();
+				
+			}else{
+				$("#notifyBtnId").hide();
+			}
+		}
+		
+		
+		if($("#status").val()=="PENDING" && userType=="TA Committee"){
+			$("#apprvBtnId").show();
+			$("#rejBtnId").show();
+		}else{
+			$("#apprvBtnId").hide();
+			$("#rejBtnId").hide();
+		}
+		//
+		$("#isRecommendedId").html("");
+		//
+		$("#recommendBtnId").prop("disabled",true);
+		$("#notifyBtnId").prop("disabled",true);
+		//
+		$("#modalApplicationId").val(json.applicationId);
+		$("#modalStudentId").val(json.studentId);
+		$("#modalQualificationId").val(json.qualification);
+
+		for (let i = 0; i < json.courseDetailsList.length; i++) {
+			let obj = json.courseDetailsList[i];
+			//
+			if(obj.isRecommended != null && obj.isRecommended == "Y" && userType=="TA Committee"){
+				$("#isRecommendedId").append('<a class="recommend" href="#">Recommended</a>');
+			}
+			//	
+			$("#modalCourseId").val(obj.courseId);
+			$("#modalApplicationStatusId").val(obj.applicationStatus);
+			
+			if( (obj.isRecommended != null && obj.isRecommended != "undefined" && obj.isRecommended == "Y") 
+					|| (obj.applicationStatus!=null && obj.applicationStatus!="PENDING") ){
+				$("#recommendBtnId").prop("disabled",true);
+			}else{
+				$("#recommendBtnId").prop("disabled",false);
+			}
+			
+			/*if( (obj.applicationStatus!=null && obj.applicationStatus=="APPROVED") ||
+					(obj.isRecommended != null && obj.isRecommended == "Y") ){
+				$("#recommendBtnId").prop("disabled",true);
+			}else{
+				$("#recommendBtnId").prop("disabled",false);
+			}*/
+
+			if (obj.offerStatus != null && obj.offerStatus != "" && obj.offerStatus != "undefined") {
+				$("#modalofferStatusId").val(obj.offerStatus);
+			} else {
+				$("#modalofferStatusId").val("NA");
+			}
+			
+			if (obj.isNotified != null && obj.isNotified != "undefined" && obj.isNotified == "Y") {
+				$("#notifyBtnId").prop("disabled",true);
+				$("#notifyBtnId").hide();
+			}else{
+				if(obj.applicationStatus=="APPROVED" || obj.applicationStatus=="REJECTED"){
+					$("#notifyBtnId").prop("disabled",false);
+				}
+			}
+
+			if (obj.courseApprvDate != null && obj.courseApprvDate != ""
+					&& obj.courseApprvDate != "undefined") {
+				$("#modalCourseApprovedOnId").val(obj.courseApprvDate);
+			} else {
+				$("#modalCourseApprovedOnId").val("NA");
+			}
+
+			if (obj.offerAcceptedDate != null && obj.offerAcceptedDate != ""
+					&& obj.offerAcceptedDate != "undefined") {
+				$("#modalOfferAcceptedOnId").val(obj.offerAcceptedDate);
+			} else {
+				$("#modalOfferAcceptedOnId").val("NA");
+			}
+
+			if (obj.courseStartDate != null && obj.courseStartDate != ""
+					&& obj.courseStartDate != "undefined") {
+				$("#modalCourseStartedOnId").val(obj.courseStartDate);
+			} else {
+				$("#modalCourseStartedOnId").val("NA");
+			}
+
+			if (obj.courseRejDate != null && obj.courseRejDate != ""
+					&& obj.courseRejDate != "undefined") {
+				$("#modalCourseRejectedOnId").val(obj.courseRejDate);
+			} else {
+				$("#modalCourseRejectedOnId").val("NA");
+			}
+
+			if (obj.offerRejectedDate != null && obj.offerRejectedDate != ""
+					&& obj.offerRejectedDate != "undefined") {
+				$("#modalOfferRejectedOnId").val(obj.offerRejectedDate);
+			} else {
+				$("#modalOfferRejectedOnId").val("NA");
+			}
+
+			if (obj.courseEndDate != null && obj.courseEndDate != ""
+					&& obj.courseEndDate != "undefined") {
+				$("#modalCourseEndedOnId").val(obj.courseEndDate);
+			} else {
+				$("#modalCourseEndedOnId").val("NA");
+			}
+
+			if (obj.rating != null && obj.rating != ""
+					&& obj.rating != "undefined") {
+				$("#modalRatingId").val(obj.rating);
+			} else {
+				$("#modalRatingId").val("NA");
+			}
+
+			if (obj.professorDetails.emailAddress != null
+					&& obj.professorDetails.emailAddress != ""
+					&& obj.professorDetails.emailAddress != "undefined") {
+				$("#modalProfessorEmailId").val(
+						obj.professorDetails.emailAddress);
+			} else {
+				$("#modalProfessorEmailId").val("NA");
+			}
+
+			if (obj.professorDetails.mobileNumber != null
+					&& obj.professorDetails.mobileNumber != ""
+					&& obj.professorDetails.mobileNumber != "undefined") {
+				$("#modalProfessorContactNoId").val(
+						obj.professorDetails.mobileNumber);
+			} else {
+				$("#modalProfessorContactNoId").val("NA");
+			}
+
+			if (obj.instructorEmail != null && obj.instructorEmail != ""
+					&& obj.instructorEmail != "undefined") {
+				$("#modalInstructorEmailId").val(obj.instructorEmail);
+			} else {
+				$("#modalInstructorEmailId").val("NA");
+			}
+
+			if (obj.instructorMobileNo != null && obj.instructorMobileNo != ""
+					&& obj.instructorMobileNo != "undefined") {
+				$("#modalInstructorContactNoId").val(obj.instructorMobileNo);
+			} else {
+				$("#modalInstructorContactNoId").val("NA");
+			}
+
+			if (obj.feedback != null && obj.feedback != ""
+					&& obj.feedback != "undefined") {
+				$("#modalFeedbackId").val(obj.feedback);
+			} else {
+				$("#modalFeedbackId").val("NA");
+			}
+
+			if (obj.feedbackTs != null && obj.feedbackTs != ""
+					&& obj.feedbackTs != "undefined") {
+				$("#modalFeedbackGivenOnId").val(obj.feedbackTs);
+			} else {
+				$("#modalFeedbackGivenOnId").val("NA");
+			}
+			
+
+		}
+		
+		/* previous courses start*/
+		$("#prevCourseTableId tr").remove();
+		if(json.prevExperience!=null && json.prevExperience!="" && json.prevExperience!="undefined" && json.prevExperience=="Y"){
+			
+			$("#noDataPrevCourseTableDivId").hide();
+			$("#prevCourseTableDivId").show();
+			
+			//alert(json.userPrevExpCoursesList)
+			//alert(json.userPrevExpCoursesList.length)
+			var index = 1;
+			var tableString = "";
+			for (let i = 0; i < json.userPrevExpCoursesList.length; i++) {
+				let preCourseObj = json.userPrevExpCoursesList[i];
+				
+				//alert("preCourseObj:: "+preCourseObj)
+				tableString += "<tr>";
+
+				tableString += '<th scope="row">';
+				tableString += index;
+				tableString += "</th>";
+
+				tableString += "<td>";
+				tableString += preCourseObj.courseName;
+				tableString += "</td>";
+
+				tableString += "<td>";
+				tableString += preCourseObj.fromDate;
+				tableString += "</td>";
+
+				tableString += "<td>";
+				tableString += preCourseObj.toDate;
+				tableString += "</td>";
+
+				tableString += "</tr>";
+
+				//alert(index)
+				index++;
+			}
+			//alert(tableString)
+			
+			
+			$('#prevCourseMainTableId').DataTable().clear().destroy();
+			$("#prevCourseTableId").append(tableString);
+			$('#prevCourseMainTableId').dataTable({
+				"lengthMenu" : [ 5, 10, 25, 75, 100 ]
+			});
+			
+			
+		}else{
+			$("#noDataPrevCourseTableDivId").show();
+			$("#prevCourseTableDivId").hide();
+		}
+		/*previous courses end*/
+		
+	}
+</script>
